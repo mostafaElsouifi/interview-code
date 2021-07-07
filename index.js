@@ -1,7 +1,7 @@
 if(process.env.NODE_ENV !== 'production'){
     require('dotenv').config();
 }
-const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/interview-code';
+const dbUrl = process.env.DB_URL;
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');

@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const home = require('../controllers/home');
+const catchAsync = require('../catchAsync');
 
-router.get('/', home.renderHomePage);
+router.get('/', catchAsync(home.renderHomePage));
 
 
 
