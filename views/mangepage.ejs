@@ -1,0 +1,30 @@
+<% layout('./layouts/boilerplate') -%>
+
+<div class="manage-container">
+    <div class="left-side">
+        <div class="text-container">
+            Select Text ->
+        </div>
+        <div class="tex-color">
+            <label for="color">Color: </label>
+            <input type="color" name="color" id="#color">
+        </div>
+        <div class="text-location">
+            Text location
+        </div>
+        <div class="agree-change">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        
+
+    </div>
+    <div class="right-side">
+        <%- include('./partials/table') %>
+    </div>
+    
+</div>
+<div class="bottom-container">
+        <button class="save">Save</button>
+</div>
+
+<script src="/js/managescript.js"></script>

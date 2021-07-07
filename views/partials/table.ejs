@@ -1,0 +1,23 @@
+
+    <div class="table">
+        <table>
+            <% let tdAdded = false %>
+            <% for(let row = 0; row < 4; row++){ %>
+                <tr>
+                    <% for(let col = 0; col < 4; col++){%>
+                        <% for(let cell of data.tableData){ %>
+                            <% if(cell.position.row === row && cell.position.col === col){%>
+                            <td><sapn><%= cell.text%></span></span></td>
+                      <% tdAdded = true}%>              
+                <%}%>
+                <% if(tdAdded === false){ %>
+                    <td></td>
+                <%}%>
+                <% tdAdded = false}%>
+                </tr>   
+            <%}%>
+        
+    </table>
+    </div>
+    
+
